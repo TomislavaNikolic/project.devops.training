@@ -19,7 +19,7 @@ blocks:
             - 'docker tag devops-project:${SEMAPHORE_WORKFLOW_ID} "$DOCKER_USERNAME"/devops-project'
             - docker push "$DOCKER_USERNAME"/devops-project
       secrets:
-        - name: DockerHub
+        - name: ProjectSecret
 promotions:
   - name: Deploy
     pipeline_file: pipeline_3.yml
