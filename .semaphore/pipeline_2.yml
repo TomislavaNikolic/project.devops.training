@@ -24,4 +24,4 @@ promotions:
   - name: Deploy
     pipeline_file: pipeline_3.yml
     auto_promote:
-      when: branch = 'setup-sempahore' AND result = 'passed'
+      when: branch = 'setup-semaphore' AND result = 'passed'
