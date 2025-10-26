@@ -14,7 +14,7 @@ blocks:
       jobs:
         - name: Deploy
           commands:
-            - cd deploy/
+            - cd examples/
             - kubectl create namespace "tomislavanikolic" || true
             - kubectl config set-context --current --namespace="tomislavanikolic"
             - kubectl apply -f deployment.yml
